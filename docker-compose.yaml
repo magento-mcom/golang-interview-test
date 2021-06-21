@@ -1,0 +1,11 @@
+version: "3"
+
+services:
+
+  api:
+    image: jordimartin/mmock:v3.0.1
+    ports:
+      - "8082:8082"
+      - "8083:8083"
+    volumes:
+      - "./api/:/config"

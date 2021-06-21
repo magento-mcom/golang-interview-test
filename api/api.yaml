@@ -1,0 +1,12 @@
+---
+request:
+  method: POST
+  path: "/"
+response:
+  statusCode: 202
+  headers:
+    Content-Type:
+      - application/json
+  body: '{"Message received}"}'
+control:
+  crazy: true
