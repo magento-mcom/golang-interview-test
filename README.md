@@ -58,7 +58,7 @@ On each POST call to this endpoint, API Gateway must:
 
 ### How to submit your solution
   * use the original repository as a [template](https://docs.github.com/es/github/creating-cloning-and-archiving-repositories/creating-a-repository-on-github/creating-a-repository-from-a-template) 
-    to create your own repository. Do not fork the repository;
+    to create your own repository and make it private. **Do not fork the repository;**
   * implement your solution;
   * create documentation for the solution; 
   * send the link to your repository back to the Adobe person of contact;
