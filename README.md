@@ -17,7 +17,7 @@ On each call to this endpoint, API Gateway must:
  * store data about a new subscriber;
  * reply to the caller with the result of the operation.
 
-We have provided to you a ready to use Subscriber that can be spun up with Docker: `docker-compose up -d api`. The URL
+We have provided to you a ready to use Subscriber that can be spin up with Docker: `docker-compose up -d api`. The URL
 of the Subscriber is `http://localhost:8083`. 
 
 ⚠️ **IMPORTANT:** This Subscriber is intentionally unstable. Sometimes returns 200 (OK) responses and sometimes 5xx errors. 
