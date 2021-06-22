@@ -61,4 +61,5 @@ On each POST call to this endpoint, API Gateway must:
     to create your own repository and make it private. **Do not fork the repository;**
   * implement your solution;
   * create documentation for the solution; 
+  * invite reviewers to your private repo: rubencougil, AVoskoboinikov, pablomoreno61 (these are github users)
   * send the link to your repository back to the Adobe person of contact;
