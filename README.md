@@ -2,7 +2,7 @@
 
 ## Objectives
 
-We would like to build an API Gateway that would receive POST request with any JSON payload, and it would redirect 
+We would like you to build an API Gateway that would receive POST request with any JSON payload, and it would redirect 
 it to a specific Subscriber. For the Subscriber to be able to receive requests it has to be registered into the API Gateway 
 beforehand.
 
@@ -20,7 +20,7 @@ On each call to this endpoint, API Gateway must:
 We have provided to you a ready to use Subscriber that can be spin up with Docker: `docker-compose up -d api`. The URL
 of the Subscriber is `http://localhost:8083`. 
 
-⚠️ **IMPORTANT:** This Subscriber is intentionally unstable. Sometimes returns 200 (OK) responses and sometimes 5xx errors. 
+⚠️ **IMPORTANT:** This Subscriber is intentionally unstable. Sometimes returns 202 (ACCEPTED) responses and sometimes 5xx errors. 
 Try to call several times to `curl -v http://localhost:8083 -d` and you'll see the different responses. We would expect 
 from you to implement some kind of retry mechanism inside API Gateway.
 
@@ -28,13 +28,13 @@ from you to implement some kind of retry mechanism inside API Gateway.
   * accepts 2 mandatory fields: 
       * a `name` of the subscriber
       * http `url` of the subscriber;
-  * the name must be validated and can only contain characters [a-z];
+  * the name must be validated and can only contain letters and numbers [a-z0-9];
   * the url must be validated to make sure it's a valid url;
 
 ### 2. Sending a request to a subscriber through API Gateway
 On each POST call to this endpoint, API Gateway must:
-  * forward the request to the provided Subscriber;
-  * retry the request if the response to the subscriber failed HTTP 5xx; 
+  * forward the request to the provided subscriber;
+  * retry the request if the response to the subscriber failed with HTTP 5xx; 
   * reply to the caller with the last response code from the subscriber.
 
 **Requirements**:

@@ -7,6 +7,6 @@ response:
   headers:
     Content-Type:
       - application/json
-  body: '{"Message received}"}'
+  body: '{"Message received"}'
 control:
   crazy: true
